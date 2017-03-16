@@ -6,11 +6,12 @@ Tiny container that use SpeedTest CLI to monitor bandwidth and send to InfluxDB
 
 With a few environment parameters you can setup your InfluxDB settings and the frequency time.
 
-- INFLUXDB_HOST=influxdb
-- INFLUXDB_PASSWORD=yourpassword
-- INFLUXDB_DATABASE=speedtest
-- SPEEDTEST_FRQUENCY=60 // in seconds
-- EXTRA_TAGS=host=EzOffice,location=betim
+- EXTRA_TAGS="host=EzOffice,location=betim"
+- INFLUXDB_DATABASE="speedtest"
+- INFLUXDB_HOST="influxdb"
+- INFLUXDB_PASSWORD="yourpassword"
+- INFLUXDB_PORT=80
+- SPEEDTEST_FRQUENCY=60
 
 # Credit
 
