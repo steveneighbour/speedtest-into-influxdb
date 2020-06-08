@@ -1,10 +1,11 @@
 FROM alpine:3.5
 
-RUN apk add --no-cache ca-certificates python3 curl
+RUN apk add --no-cache ca-certificates python3 curl tzdata
 
-ENV SPEEDTEST_VERSION 1.0.2
+#ENV SPEEDTEST_VERSION 2.1.2
 
-RUN pip3 install speedtest-cli==$SPEEDTEST_VERSION
+#RUN pip3 install speedtest-cli==$SPEEDTEST_VERSION
+RUN pip3 install speedtest-cli
 
 COPY ./looper.sh /
 RUN chmod +x /looper.sh
