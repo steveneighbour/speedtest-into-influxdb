@@ -5,7 +5,9 @@ hostname=$(hostname)
 
 echo "Current timestamp: $timestamp"
 
-output=$(speedtest-cli --simple --bytes)
+output=$(speedtest-cli --simple --bytes --server $SERVER)
+
+#https://c.speedtest.net/speedtest-servers-static.php
 
 echo "Output: $output"
 
