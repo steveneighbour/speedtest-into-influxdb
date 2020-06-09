@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-RUN apk add --no-cache ca-certificates python3 curl tzdata
+RUN apk add --no-cache ca-certificates python3 curl tzdata coreutils
 
 #ENV SPEEDTEST_VERSION 2.1.2
 
